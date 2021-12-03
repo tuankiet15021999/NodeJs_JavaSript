@@ -2,9 +2,34 @@ GET http://localhost:3000
 
 ###
 POST http://localhost:3000/user/register
+Content-Type: application/json
+
+{
+    "email":"abc@gmail.com",
+    "password":"123456"
+}
 ###
 POST http://localhost:3000/user/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWE4ODY0ZjVlYTY4NTc0NTYzNjQzOGIiLCJpYXQiOjE2Mzg0MzUyMDgsImV4cCI6MTYzODQzODgwOH0.xxwuc-x7w8DIf61t0dnCX8JvMPZHxRWuFbv9_MlCL_4"
+}
 ###
 POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+    "email":"abc@gmail.com",
+    "password":"123456"
+}
 ###
-POST http://localhost:3000/user/logout
+DELETE http://localhost:3000/user/logout
+Content-Type: application/json
+
+{
+    "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWE4OTM4MjlkMTVjMzQ3YjEwNDk1OWQiLCJpYXQiOjE2Mzg0Mzc3ODcsImV4cCI6MTYzODQ0MTM4N30.g20zxpvr4Jg7YlFXQ0b2mp0xta4hHTw17pZhi8dYzho"
+}
+###
+GET  http://localhost:3000/user/getlists
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWE4OTM4MjlkMTVjMzQ3YjEwNDk1OWQiLCJpYXQiOjE2Mzg0Mzc3NjcsImV4cCI6MTYzODQzNzgyN30.3fJ7V-NAISwFYDHDrIseIMukuSIfZDRlnqg8KywFa6g  
