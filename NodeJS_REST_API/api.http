@@ -1,0 +1,14 @@
+GET http://api.github.com
+
+### get list
+GET http://localhost:3000/v1/users
+### get one user
+GET http://localhost:3000/v1/users/123
+### create user
+POST  http://localhost:3000/v1/users
+### update user
+PATCH  http://localhost:3000/v1/users/12
+### delete user
+DELETE http://localhost:3000/v1/users/12
+### get list
+GET http://localhost:3000/v1/
